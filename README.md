@@ -7,19 +7,24 @@ This repository provides the `presence-eye` RPM package for Fedora, allowing you
 To install `presence-eye` on Fedora, follow these steps:
 
 1. **Add the repository**:
-   ```bash
-   sudo curl -o /etc/yum.repos.d/presence-eye.repo https://raw.githubusercontent.com/FutureMarkRwanda/presence-eye-rpm-repo/main/presence-eye.repo
-   ```
+```bash
+sudo curl -o /etc/yum.repos.d/presence-eye.repo https://raw.githubusercontent.com/FutureMarkRwanda/presence-eye-rpm-repo/main/presence-eye.repo
+```
 
-2. **Refresh DNF cache**:
-   ```bash
-   sudo dnf makecache
-   ```
+2. **Import the GPG key**:
+```bash
+sudo rpmkeys --import https://raw.githubusercontent.com/FutureMarkRwanda/presence-eye-rpm-repo/main/RPM-GPG-KEY-presence-eye
+```
 
-3. **Install Presence Eye**:
-   ```bash
-   sudo dnf install presence-eye
-   ```
+3. **Refresh DNF cache**:
+```bash
+sudo dnf makecache
+```
+
+4. **Install Presence Eye**:
+```bash
+sudo dnf install presence-eye
+```
 
 After installation, you can launch the app from the terminal with `presence_eye` or find it in your application menu.
 
@@ -32,7 +37,7 @@ After installation, you can launch the app from the terminal with `presence_eye`
 - **Summary**: PresenceEye Smart Extensions Control App
 
 ## Notes
-- This repository does not use GPG signing (`gpgcheck=0`). For a signed version, contact the maintainer.
+- This repository uses GPG signing for security. The public key is included as `RPM-GPG-KEY-presence-eye`.
 
 ## Maintainer
 - HIRWA RUKUNDO Hope <rw.byose@gmail.com>
