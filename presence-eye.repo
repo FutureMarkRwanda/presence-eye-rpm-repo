@@ -1,0 +1,5 @@
+[presence-eye]
+name=Presence Eye Repository
+baseurl=https://raw.githubusercontent.com/FutureMarkRwanda/presence-eye-rpm-repo/main/
+enabled=1
+gpgcheck=0
