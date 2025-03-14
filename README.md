@@ -30,14 +30,26 @@ After installation, you can launch the app from the terminal with `presence_eye`
 
 ## Package Details
 - **Name**: presence-eye
-- **Version**: 1.0
+- **Version**: 1.0.1
 - **Release**: 1.fc41
 - **Architecture**: x86_64
 - **License**: Proprietary
 - **Summary**: PresenceEye Smart Extensions Control App
 
+## Changelog
+### **Version 1.0.1 - (March 14, 2025)**
+- Fixed network detection issue.
+- Improved stability and connection handling.
+
+### **Version 1.0 - (October 24, 2024)**
+- Initial release.
+
 ## Notes
 - This repository uses GPG signing for security. The public key is included as `RPM-GPG-KEY-presence-eye`.
+- If upgrading from an older version, run:
+  ```bash
+  sudo dnf upgrade presence-eye
+  ```
 
 ## Maintainer
 - HIRWA RUKUNDO Hope <rw.byose@gmail.com>
